@@ -46,6 +46,19 @@
           }
         }
       },
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "JavaScriptEngineSwitcher.Core": "3.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll": {}
+        }
+      },
       "JSPool/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -75,6 +88,15 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.DependencyModel/2.1.0": {
@@ -647,6 +669,25 @@
         "readme.txt"
       ]
     },
+    "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection/3.1.0": {
+      "sha512": "kmMJtNQyPGJqxTIDwRhCN9MSi6l9lYbc5hfj4w2i5sAlXBV/miKVrr3nXOS7ETU1U3bFnSp2tU7ySTUE+lKh0w==",
+      "type": "package",
+      "path": "javascriptengineswitcher.extensions.msdependencyinjection/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.3.1.0.nupkg.sha512",
+        "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.nuspec",
+        "LICENSE.txt",
+        "lib/net45/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
+        "lib/net45/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
+        "lib/netstandard1.3/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.dll",
+        "lib/netstandard2.0/JavaScriptEngineSwitcher.Extensions.MsDependencyInjection.xml",
+        "readme.txt"
+      ]
+    },
     "JSPool/4.0.0": {
       "sha512": "r+AeQ9R50HxU+HLqASYvZz6Mvg7RmZwEnCVhQ+xGYVexFjYYqlkW6by9HaflGaHjy+/28YLbb3qxDLRJ3AbZGQ==",
       "type": "package",
@@ -679,6 +720,19 @@
         "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
         "microsoft.dotnet.platformabstractions.2.1.0.nupkg.sha512",
         "microsoft.dotnet.platformabstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/2.0.0": {
+      "sha512": "eUdJ0Q/GfVyUJc0Jal5L1QZLceL78pvEM9wEKcHeI24KorqMDoVX+gWsMGLulQMfOwsUaPtkpQM2pFERTzSfSg==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyModel/2.1.0": {
@@ -2494,6 +2548,7 @@
     ".NETCoreApp,Version=v3.0": [
       "JavaScriptEngineSwitcher.ChakraCore >= 3.1.10",
       "JavaScriptEngineSwitcher.Core >= 3.1.0",
+      "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection >= 3.1.0",
       "React.AspNet >= 5.1.1"
     ]
   },
@@ -2539,6 +2594,10 @@
             "version": "[3.1.10, )"
           },
           "JavaScriptEngineSwitcher.Core": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "JavaScriptEngineSwitcher.Extensions.MsDependencyInjection": {
             "target": "Package",
             "version": "[3.1.0, )"
           },
